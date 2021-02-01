@@ -1,0 +1,115 @@
+.main-nav {
+    
+    margin-left: auto;
+    margin-right: auto ;
+   background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+
+}
+
+.header .link.current {
+    color: #2196F3;
+    position: relative;
+    }
+.site-nav {
+    display: flex;
+    padding-left: 93px;
+
+
+& .items{
+   
+color: $primary-text-color;
+@include fonts (400, 500, 14px, 1.14);
+
+}
+& .items + .items {
+    margin-left: 50px;
+}
+& .link,.link-top, .link {
+    display: block;
+}    
+& a{
+    position: relative;
+    display: block;
+}
+& .link:after{
+    transform: scaleX(1);
+    }
+& a:hover::after{
+        transform: scaleX(1);
+        }
+
+& .link-top{
+        color: $primary-link-color;
+    }
+& .link,.link-top:hover {
+        color: $secondary-link-color; 
+& .link,.link-top:focus{
+        color: $secondary-link-color;
+    } 
+}     
+}  
+.site-nav a::after{
+
+            @extend %site-navi;
+        }
+        
+.auth-nav {
+    display: flex; 
+    padding-left: 300px;
+
+   .link{
+    display: block;
+       text-decoration:none ;
+   }
+
+   .items + .items {
+    padding-left: 50px;
+}
+}
+
+.auth-nav .link{
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px ;
+    align-items: center;
+    text-decoration:none ;
+    @include fonts (400, 500, 14px, 1.14);
+    color: $primary-text-color;
+}
+.auth-nav li a:hover,
+.auth-nav li a:focus,
+.auth-nav li a:hover .nav-icons,
+.auth-nav li a:focus .nav-icons
+ {
+    color: $secondary-link-color; 
+    fill: $secondary-link-color;
+    
+}
+.nav-icons {
+
+    margin-right: 10px;
+    height: 12px;
+    width: 16px;
+    color: $primary-text-color;
+    font-family: Roboto;
+    @include fonts (400, 500, 14px, 1.14);
+    text-decoration: none;
+}
+/*Portfolio menu*/
+.central-links{
+    margin-left: auto;
+    margin-right: auto ;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* width: 643px; */
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    justify-content: center;
+
+& .item + .item{
+    margin-left: 8px;
+}
+}

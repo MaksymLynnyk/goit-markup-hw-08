@@ -1,0 +1,26 @@
+.links-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+
+&:hover,
+&:focus {
+    background-color: $secondary-link-color;
+} 
+
+&:hover .svg,
+&:focus .svg {
+    fill: #ffffff;
+}
+}
+
+.svg{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}

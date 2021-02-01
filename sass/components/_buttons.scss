@@ -1,0 +1,59 @@
+.bussines .button{
+    width: 200px;
+height: 50px;
+margin-bottom: 200px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+ font-size: 16px;
+line-height: 1.87;
+text-align: center;
+}
+.news-button {
+    width: 195px;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    background: $secondary-link-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+&-ico {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: #FFFFFF;
+}   
+}
+.button{
+    color: #212121;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 18px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background: #F5F4FA;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+border: 0;
+
+&:hover {
+    @extend %newsbutton;
+}
+&:focus { 
+    @extend %newsbutton;
+}
+}

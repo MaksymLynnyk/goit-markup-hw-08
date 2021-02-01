@@ -1,0 +1,34 @@
+.company{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0;
+}
+
+.clients-company {
+    display: flex;
+}
+.company-link{
+    display: flex;
+     border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+}
+.company-svg{
+    fill: #afb1b8;
+
+.company-link:hover &,
+.company-link:focus & {
+    fill: $secondary-link-color; 
+}
+}
+.company-link:hover,
+.company-link:focus {
+    border-color: $secondary-link-color; 
+}	

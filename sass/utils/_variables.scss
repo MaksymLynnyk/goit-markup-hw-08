@@ -1,0 +1,41 @@
+
+$primary-text-color: #757575;
+$secondary-text-color: #212121;
+$primary-link-color:#212121;
+$secondary-link-color:#2196F3;
+
+.tres{
+        background-color: blue;
+}
+
+.site-nav {
+        display: flex;
+        padding-left: 93px;
+} 
+
+.header .link.current {
+    color: #2196F3;
+    position: relative;
+    }
+   
+
+    .button:hover {
+        background: $secondary-link-color; 
+        color: #FFFFFF;
+    }
+    .button:focus { 
+        background:  $secondary-link-color; 
+        color: #FFFFFF;
+    }
+    .icon-an1::before{
+        background-image: url(../img/an1.svg);
+    }
+    .icon-cl1::before{
+    background-image: url(../img/cl1.svg);
+    }
+    .icon-dia1::before{
+        background-image: url(../img/dia1.svg);
+    }
+    .icon-as1::before{
+        background-image: url(../img/as1.svg);
+    }

@@ -1,0 +1,57 @@
+
+html { 
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+*, *:before, :after {
+    box-sizing: inherit;
+} 
+
+ul {margin:0;padding:0;list-style: none;}
+img {display: block;}
+a {color:inherit;}
+a,a:hover,a:focus {text-decoration: none;}
+button{border: none;color: currentColor;}
+
+header{
+    width: 100%;
+    
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+
+.currentLink {
+    color: #2196F3; 
+}
+ .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}  
+.link{
+    padding: 0px;
+    margin: 0px;
+}
+section{
+   padding-top: 0px;
+      } 
+p{
+    padding: 0px;
+    margin: 0px; 
+}
+
+h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  } 
+  
