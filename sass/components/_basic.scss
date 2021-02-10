@@ -1,57 +1,83 @@
-
 html { 
-    width: 100%;
     box-sizing: border-box;
-    
+    width: 100%;
+    background: getColor('document-bg');
 }
-*, *:before, :after {
+
+body {
+    font: 500 14px/1.14 Roboto;
+    letter-spacing: 0.03em;
+    color: getColor('text-grey');
+    background: getColor('white');
+}
+
+*, 
+*:before, 
+*:after {
     box-sizing: inherit;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+}
+
+a {
+    color:inherit;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+.hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: getColor('text-dark');
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+}
+
+@media screen and (max-width: 479px) { 
+    @include container(100%, 0 15px); 
+} 
+@media screen and (min-width: 480px) { 
+    @include container(480px, 0 15px); 
+} 
+@media screen and (min-width: 768px) { 
+    @include container(768px, 0 15px); 
+} 
+@media screen and (min-width: 1200px) { 
+    @include container(1200px, 0 15px); 
 } 
 
-ul {margin:0;padding:0;list-style: none;}
-img {display: block;}
-a {color:inherit;}
-a,a:hover,a:focus {text-decoration: none;}
-button{border: none;color: currentColor;}
-
-header{
-    width: 100%;
-    
-    border-bottom: 1px solid #ECECEC;
+.flex-row {
+    display: flex;
+    justify-content: space-between;
 }
 
-
-
-.currentLink {
-    color: #2196F3; 
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
- .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-  
-}  
-.link{
-    padding: 0px;
-    margin: 0px;
-}
-section{
-   padding-top: 0px;
-      } 
-p{
-    padding: 0px;
-    margin: 0px; 
-}
-
-h1,h2,h3{
-    padding: 0;
-    margin: 0;
-}
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  } 
-  

@@ -1,21 +1,28 @@
-@import "./components/basic";
-@import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/placeholders";
-@import "./components/base/fonts";
-@import "./components/widgets/modal";
-@import "./components/header";
-@import "./components/menu";
-@import "./components/hero";
-@import "./components/buttons";
-@import "./components/main";
-@import "./components/whatdo";
-@import "./components/team";
-@import "./components/social";
-@import "./components/company";
-@import "./components/footer";
-@import "./components/widgets/newsletter";
-@import "./components/portfolio";
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/functions';
 
 
 
+@import './components/basic';
+@import './components/lists';
+@import './components/checkbox';
+@import './components/buttons';
+
+
+
+@import './layouts/header';
+@import './layouts/logo';
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/what-we-do';
+@import './layouts/team';
+@import './layouts/parthership';
+@import './layouts/portfolio';
+@import './layouts/footer';
+
+
+@import './widgets/social-links';
+@import './widgets/modal';
+@import './widgets/newslatter';

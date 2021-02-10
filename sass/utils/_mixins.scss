@@ -1,7 +1,37 @@
-@mixin fonts($fst, $fw, $fs, $lh) {
-   
-    font-style: $fst; 
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $lh;
+@mixin from($from) {
+  @media screen and (min-width: getRenge($from)) { @content; }
+}
+
+@mixin to($to) {
+  @media screen and (max-width: getRenge($to) - 1) { @content; }
+}
+
+@mixin from-to($from, $to) {
+  @media screen and (min-width: getRenge($from)) and (max-width: getRenge($to) - 1) { @content; }
+}
+
+@mixin dpr2 {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (   min--moz-device-pixel-ratio: 2),
+      screen and (     -o-min-device-pixel-ratio: 2/1),
+      screen and (        min-device-pixel-ratio: 2),
+      screen and (                min-resolution: 192dpi),
+      screen and (                min-resolution: 2dppx) 
+      { @content; }
+}
+@mixin dpr3 {
+  @media screen and (-webkit-min-device-pixel-ratio: 3),
+      screen and (   min--moz-device-pixel-ratio: 3),
+      screen and (     -o-min-device-pixel-ratio: 3/1),
+      screen and (        min-device-pixel-ratio: 3),
+      screen and (                min-resolution: 288dpi),
+      screen and (                min-resolution: 3dppx) 
+      { @content; }
+}
+@mixin container($width, $padding) { 
+  .container {
+      width: $width;
+      margin: 0 auto;
+      padding: $padding;
+  }
 } 
