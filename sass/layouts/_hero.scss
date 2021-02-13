@@ -60,7 +60,7 @@
     text-transform: uppercase;
 
     @include from(desktop) {
-        max-width: 696px;
+        /* max-width: 696px; */
         font: 900 44px/1.37 Roboto;
     }
 }

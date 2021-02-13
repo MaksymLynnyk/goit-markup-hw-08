@@ -10,9 +10,12 @@
 </head>
 <body class="page">
     <header class="headmob">
-        <div class="container headmob__nav">
+    
+         <div class="container headmob__nav">
+            
             <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-
+            
+            
             <button 
                 class="btn mmenu-btn" 
                 data-mmenu-burger
@@ -24,17 +27,25 @@
                 </svg>
             </button>
         
-        <div class="nav is-hidden" id="mmenu-nav" data-mmenu>
-           
-                <nav class="nav__box">
+            <div class="nav is-hidden" id="mmenu-nav" data-mmenu> 
+        
+                 <nav class="nav__box">
                     <ul class="nav__list">
                         <li class="nav__item main-link"><a class="nav__link nav__link--main active" href="./index.html">Студия</a></li>
                         <li class="nav__item main-link"><a class="nav__link nav__link--main" href="./portfolio.html">Портфолио</a></li>
                         <li class="nav__item main-link"><a class="nav__link nav__link--main" href="./contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
-
+ 
                 <ul class="nav__list contact">
+                    <li class="nav__item contact__item">
+                        <a class="nav__link contact__link_tel"  href="tel:+380961111111">
+                            <svg class="contact__tel">
+                                <use href="./img/sprite.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>    
+                    </li>
                     <li class="nav__item contact__item">
                         <a class="nav__link contact__link" href="mailto:info@devstudio.com">
                             <svg class="contact__mail">
@@ -43,17 +54,27 @@
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="nav__item contact__item">
-                        <a class="nav__link contact__link"  href="tel:+380961111111">
-                            <svg class="contact__tel">
-                                <use href="./img/sprite.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul> 
+                </ul>
+                    <div class="mob-nav__socials">
+                        <ul class="mob-nav__socials-list">
+                            <li class="mob-nav__socials-item">
+                                <a href="" class="mob-nav__socials-link">Instagram</a>
+                            </li>
+                            <li class="mob-nav__socials-item">
+                                <a href="" class="mob-nav__socials-link">Twitter</a>
+                            </li>
+                            <li class="mob-nav__socials-item">
+                                <a href="" class="mob-nav__socials-link">Facebook</a>
+                            </li>
+                            <li class="mob-nav__socials-item">
+                                <a href="" class="mob-nav__socials-link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+               
+                    
             </div>
-        </div>
+        </div> 
     </header>
     <main>
         <section class="hero">
