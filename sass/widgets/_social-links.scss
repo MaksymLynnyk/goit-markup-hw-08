@@ -5,6 +5,7 @@
 }
 .social__item:not(:last-child) {
   margin-right: 10px;
+ 
 }
 .social__link {
   display: flex;
@@ -27,6 +28,19 @@
 }
   
 .social__ico {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill:getColor('text-grey');
+  transition: all 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social__link:hover &,
+  .social__link:focus & {
+      fill: getColor('white');
+  }
+}
+
+.social__ico_footer {
   display: block;
   width: 20px;
   height: 20px;
